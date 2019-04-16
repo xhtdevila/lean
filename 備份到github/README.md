@@ -10,7 +10,7 @@ ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 查看后，再复制下公钥，然后打开Github官网，进入https://github.com/settings/ssh/new，Title随便填，然后Key填入刚刚复制的密匙，最后点击Add SSH Key添加即可。
 请输入图片描述
-
+(1.png)
 2、建立私人仓库
 我们需要先访问https://github.com/new，新建一个仓库用来存放备份文件，名称自己随意，记得下面一定要勾选Private，也就是私人仓库。不然你辛辛苦苦备份的小姐姐就要被别人偷走了。
 请输入图片描述
