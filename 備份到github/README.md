@@ -14,6 +14,7 @@ cat ~/.ssh/id_rsa.pub
 
 2、建立私人仓库
 我们需要先访问https://github.com/new，新建一个仓库用来存放备份文件，名称自己随意，记得下面一定要勾选Private，也就是私人仓库。不然你辛辛苦苦备份的小姐姐就要被别人偷走了。
+![1](2.png)
 请输入图片描述
 
 3、配置本地仓库
@@ -27,7 +28,7 @@ git init
 git remote add origin git@github.com:iiiiiii1/MOERATS.git
 关联仓库的时候，后面可以用HTTPS链接也可以用SSH，这里强烈建议选择SSH，安全性很高。
 请输入图片描述
-
+![1](3.png)
 4、初次备份
 
 #进入备份的文件夹
@@ -41,7 +42,7 @@ git push -u origin master
 推送的时候可能会提示The authenticity of host 'github.com' can't be established.信息，直进yes即可。
 
 然后可以看到仓库的备份文件了。
-请输入图片描述
+![1](4.png)
 
 5、设置定时备份
 在根目录先新建一个bash脚本：
