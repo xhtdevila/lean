@@ -94,7 +94,7 @@ git config --global user.email "admin@moerats.com"
 ssh-agent bash
 ssh-add ~/.ssh/github
 
-rclone备份
+## rclone备份
 
 配置完成后，手工备份一次，测试一下效果。这里我要将服务器/hi_ktsee_com/attachments/201705目录下的所有文件，备份到网盘中的/hi_ktsee_com/attachments/201705中，执行：
 
