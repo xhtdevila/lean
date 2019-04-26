@@ -97,4 +97,11 @@ ssh-add ~/.ssh/github
 ## rclone备份
 crontab -e添加定时 || crontab -l列出定时列表
 
+|/usr/bin/rclone  rclone所在的位置|
+|copy指令|
+|/root/a  本地所需要备份的文件路径|
+|xhtg  rclone绑定网盘时的名字|
+|/saju/$(date +%Y%m%d%H%M%S) 网盘的储存路径，如果是根目录，可以直接“/”，例如：xhtg:/ |
+|$(date +%Y%m%d%H%M%S) 以时间创建文件夹作为备份目录，
 /usr/bin/rclone copy /root/a xhtg:/saju/$(date +%Y%m%d%H%M%S)
+![1](sj.png)
