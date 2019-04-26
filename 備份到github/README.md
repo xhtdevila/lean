@@ -104,6 +104,6 @@ crontab -e添加定时 || crontab -l列出定时列表
 |/saju/$(date +%Y%m%d%H%M%S) 网盘的储存路径，如果是根目录，可以直接“/”，例如：xhtg:/ |
 |$(date +%Y%m%d%H%M%S) 以时间创建文件夹作为备份目录，
 ```
-/usr/bin/rclone copy /root/a xhtg:/saju/$(date +%Y%m%d%H%M%S)
+*/30 * * * * /usr/bin/rclone copy /root/a xhtg:/saju/$(date +%Y%m%d%H%M%S)
 ```
 ![1](sj.png)
