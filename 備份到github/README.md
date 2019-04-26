@@ -96,4 +96,5 @@ ssh-add ~/.ssh/github
 
 ## rclone备份
 crontab -e添加定时 |crontab -l列出定时列表
+
 /usr/bin/rclone copy /root/a xhtg:/saju/$(date +%Y%m%d%H%M%S)
