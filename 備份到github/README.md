@@ -95,7 +95,7 @@ ssh-agent bash
 ssh-add ~/.ssh/github
 
 ## rclone备份
-crontab -e添加定时 || crontab -l列出定时列表
+crontab -e添加定时  crontab -l列出定时列表
 
 | 命令                        | 解释                                                |
 | :-----------------------    | :-------------------------------------------------- |
@@ -113,8 +113,8 @@ crontab -e添加定时 || crontab -l列出定时列表
 
 | 命令    | 解释                             |
 | :-----------------------    | :-------------------------------------------------- |
-| Windows | 设置 > 工具 > 自定义代理 (客户端内) |
-| UWP     | Windows 设置 > 网络和 Internet > 代理  |
+| /usr/bin/rclone | rclone所在的位置 |
+| copy     | rclone所在的位置  |
 | Linux   | 系统设置 > 网络 > 网络代理           |
 | macOS   | 系统偏好设置 > 网络 > 高级 > 代理      |
 | Android | WLAN > 修改网络 > 高级选项 > 代理      |
