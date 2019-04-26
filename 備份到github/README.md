@@ -110,12 +110,3 @@ crontab -e添加定时  crontab -l列出定时列表
 */30 * * * * /usr/bin/rclone copy /root/a xhtg:/saju/$(date +%Y%m%d%H%M%S)
 ```
 ![1](sj.png)
-
-| 命令    | 解释                             |
-| :-----------------------    | :-------------------------------------------------- |
-| /usr/bin/rclone | rclone所在的位置 |
-| copy     | rclone所在的位置  |
-| Linux   | 系统设置 > 网络 > 网络代理           |
-| macOS   | 系统偏好设置 > 网络 > 高级 > 代理      |
-| Android | WLAN > 修改网络 > 高级选项 > 代理      |
-| iOS     | Surge，Shadowrocket 等添加配置    |
