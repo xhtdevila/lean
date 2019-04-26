@@ -96,7 +96,7 @@ ssh-add ~/.ssh/github
 
 ## rclone备份
 crontab -e添加定时  crontab -l列出定时列表
-
+在crontab中%是有特殊含义的，表示换行的意思。如果要用的话必须进行转义\%，如经常用的date ‘+%Y%m%d’在crontab里是不会执行的，应该换成date ‘+\%Y\%m\%d’。
 | 命令                        | 解释                                                |
 | :-----------------------    | :-------------------------------------------------- |
 | /usr/bin/rclone             | rclone所在的位置                                     |
@@ -107,6 +107,6 @@ crontab -e添加定时  crontab -l列出定时列表
 | $(date +%Y%m%d%H%M%S)       | 以时间创建文件夹作为备份目录                          |
 
 ```
-*/30 * * * * /usr/bin/rclone copy /root/a xhtg:/saju/$(date +%Y%m%d%H%M%S)
+*/30 * * * * /usr/bin/rclone copy /root/a xhtg:/saju/$(date +\%Y\%m\%d\%H\%M\%S)
 ```
 ![1](sj.png)
