@@ -5,6 +5,7 @@
 |cat 文件1 > 文件2                    | 将文件1的内容覆盖到文件2中                              |
 | echo “内容” > filename   | rclone绑定网盘时的名字                               |
 | mv file1 file2 |移动1到2 |
+|mv /root/a/a.txt /root/a/b.txt|将a.txt重命名b.txt|
 | cp file1 file2 |复制1到2 |
 |rm file |删除文件|
 |rm /root/a/*|删除root下a目录所有文件|
